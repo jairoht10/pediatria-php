@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Historias Pediatricas</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/scrolling-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Añadir Usuario</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="btn-group" id="navbarResponsive">
+                  <button type="button" class="btn btn-default dropdown-toggle"
+                  data-toggle="dropdown">
+                    Registro <span class="caret"></span>
+                 </button>
+          <ul class="dropdown-menu" role = "menu">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Madre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Padre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Paciente</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </nav>
+
+    <header class="bg-primary text-white">
+      <div class="container text-center">
+        <h1>Bienvenido al Sistema de Historias Pediátricas</h1>
+        <p class="lead">Registro de Pacientes </p>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form class="form-horizontal" role="form" action="acceder.php" method="POST">
+            <div class="form-group">
+              <label for="ejemplo_nombre" class="col-lg-2 control-label">Nombre</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="ejemplo_nombre" placeholder="Nombre" spellcheck="true" style="text-transform:uppercase">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ejemplo_apellido" class="col-lg-2 control-label">Apellido</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="ejemplo_usuario" placeholder="Apellido" spellcheck="true" style="text-transform:uppercase">
+              </div>
+            </div>
+            <!--<div class="form-group">
+              <label for="ejemplo_cedula" class="col-lg-2 control-label">Cedula</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="ejemplo_cedula" placeholder="Cedula">
+              </div>
+            </div>
+            <div class="form-group">
+            <label for="ejemplo_rol" class="col-lg-2 control-label">Rol</label>
+              <select>
+                <option>Administrador</option>
+                <option>Usuario</option>
+              </select>
+            </div> -->
+            <div class="form-group">
+              <label for="ejemplo_fecha" class="col-lg-2 control-label">Fecha de Ingreso</label>
+              <div class="col-lg-10">
+                <input type="date" sep="1" min="2017-11-12" value="2017-11-12" class="form-control" id="fecha" placeholder="AAAA-MM-DD">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ejemplo_usuario" class="col-lg-2 control-label">Edad</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="ejemplo_nombre" placeholder="Edad">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ejemplo_ts" class="col-lg-2 control-label">Tipo de Sangre</label>
+              <div class="col-lg-10">
+                <select name="ts">
+                  <option>O-</option>
+                  <option>O+</option>
+                  <option>B-</option>
+                  <option>B+</option>
+                  <option>A-</option>
+                  <option>A+</option>
+                  <option>AB-</option>
+                  <option>AB+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ejemplo_ts" class="col-lg-2 control-label">Sexo</label>
+              <div class="col-lg-10">
+                <select name="sexo">
+                  <option>niño</option>
+                  <option>niña</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ejemplo_ts" class="col-lg-2 control-label">Motivo de Consulta</label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1"> Fiebre
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox2" value="option2"> Vomito
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" value="option3"> Tos
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" value="option3"> Dolor Abdominal
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" value="option3"> Chequeo general
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label for="ejemplo_ts" class="col-lg-2 control-label">Vacunas Recibidas</label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> Anti polio
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2"> Pentavalente
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Toxoide tetánico
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Hepatitis
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Varicela
+          </label>
+        </div>
+
+
+              <div class="form-group">
+                <label for="ejemplo_historial" class="col-lg-2 control-label">Antecedentes medicos</label>
+                <textarea class="form-control" rows="4" name="antecedente" spellcheck="true" style="text-transform:uppercase">Antecedentes medicos</textarea>
+              </div>
+              <div class="form-group">
+                <label for="ejemplo_historial" class="col-lg-2 control-label">Tratamiento</label>
+                <textarea class="form-control" rows="4" name="antecedente" spellcheck="true" style="text-transform:uppercase">Tratamiento medico</textarea>
+              </div>
+            <div class="form-group">
+              <div class="col-lg-offset-2 col-lg-10">
+                <button type="submit" class="btn btn-success">Registrar</button>
+                <button type="reset" class="btn btn-info">Limpiar</button>
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Jairo Hernández 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="../js/scrolling-nav.js"></script>
+
+  </body>
+
+</html>
